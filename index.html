@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmarthPhone</title>
+    <style>
+        * {
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        body {
+            background-color:beige;
+        }
+         .container {
+           background-color:black;
+           border-radius:12%;
+           height:500px;
+           width:280px;
+           position:absolute;
+           top:50%;
+           left:50%;
+           transform:translate(-50%, -50%);
+        }
+         .tela {
+          background-color:rgb(51, 51, 51);
+          border-radius:8%;
+          height:470px;
+          width:250px;
+          position:absolute;
+          top:50%;
+          left:50%;
+          transform:translate(-50%, -50%);
+        }
+         .button {
+         background-color:black;
+         border-radius:24%;
+         height:70px;
+         width:15px; 
+        }
+        #button_1 {
+         position:absolute;
+         top: 31%;
+         left: 41%;
+         transform:translate(-32.5%, -30%);
+        }
+        #button_2 {
+         position:absolute;
+         top: 40%;
+         left: 40.97%;
+         transform:translate(-20%, -10%);
+        }
+        #button_3 {
+         position:absolute;
+         top: 36%;
+         left: 58.5%;
+         transform:translate(-20%, -10%);
+        }
+    </style>
+</head>
+<body>
+    <div class="button" id="button_1" onclick="plus()"></div>
+    <div class="button" id="button_2" onclick="minum()"></div>
+    <div class="button" id="button_3" onclick="off()"></div>
+    <div class="container">
+        <div class="tela" onclick="color()" ondblclick="back()">
+
+
+
+        </div>
+    </div>
+    <script>
+        button_1= document.querySelector('#button_1');
+        button_2= document.querySelector('#button_2');
+        button_3= document.querySelector('#button_3');
+        tela= document.querySelector(".tela");
+        
+        const color= () => {
+            tela.style.background= 'white';
+        }
+        const back= () => {
+            tela.style.background= 'rgb(51, 51, 51)';
+        }
+        const plus= () => {
+         button_1.style.width= '10' +'px';      
+         button_1.style.left= 41.2 + '%';    
+        }
+        const minum= () => {
+         button_2.style.width= '10' +'px';   
+         button_2.style.left= 41.2 + '%';     
+        }
+        const off= () => {
+         button_3.style.width= '10' +'px';   
+         button_3.style.left= 58.48 + '%'; 
+        }
+        
+    </script>
+</body>
+</html>
