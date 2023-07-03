@@ -1,3 +1,3 @@
 # smarthphone
 
- https://theus-iago.github.io/Projeto-SmarthPhone
+ https://theus-iago.github.io/Projeto-Smarthphone
