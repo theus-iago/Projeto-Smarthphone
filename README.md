@@ -1,5 +1,3 @@
 # smarthphone
- teste de repositório
 
-
-estou testando o repositorio! 
+ https://theus-iago.github.io/Projeto-SmarthPhone
